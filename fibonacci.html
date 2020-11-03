@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        let a=0,b=1,c;
+            function fib()
+            {
+                var n=document.myform.n1.value;
+                for(let i=1;i<= n;i++)
+                {
+                    document.myform.result.value=document.myform.result.value+a+"\t";
+                    c=a+b;
+                    a=b;
+                    b=c;
+                }
+            }
+        </script>
+        </head>
+        <body>
+            <form name="myform"><br>
+                Enter a number:<input type="text" name="n1"><br><br>
+                <input type ="button" onclick="fib()" value="submit"><br><br>
+                Fibonacci series:<textarea name="result" value=" " row="10" col="10"></textarea>
+            </form>
+
+        </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function reverse()
+            {
+                var str=document.getElementById("str").value;
+                var l=str.length;
+                for(var i=l-1;i>=0;i--)
+                {
+                    document.myform.result.value=document.myform.result.value+str[i];
+                }
+            }
+        </script>
+        </head>
+        <body>
+            <form name="myform">
+                Enter a string:<input type="text" id="str"><br><br>
+                <input type ="button" onclick="reverse()" value="submit"><br><br>
+                Reverse of String:<input type="text" name="result" value=" ">
+            </form>
+
+        </body>
+</html>
